@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Chela+One&family=Cuprum:ital,wght@0,400..700;1,400..700&family=Fasthand&family=Gloock&family=Goudy+Bookletter+1911&family=Nova+Script&family=Radley:ital@0;1&family=Rancho&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+         .abt_us{
+             background-image: url(flower.png);
+            background-attachment: fixed;
+            background-size:contain;
+            background-repeat: no-repeat;
+        }
+         .navbar{
+            height: 100px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar ul{
+            list-style: none;
+            display: flex;
+        }
+        .navbar ul li{
+            padding: 10px 30px;
+            position: relative;
+        }
+        .navbar ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            
+            
+            transition: all 0.3s;
+        }
+        .navbar ul li a i{
+            color: white;
+            font-size: 20px;
+            padding: 10px 5px;
+        }
+         .dropdown{
+            display:none;
+        }
+        .navbar ul li:hover .dropdown{
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            background-color: white;
+        }
+        .dropdown ul{
+            display: block;
+            margin: 10px;
+        } 
+        .dropdown ul li {
+            width: 150px;
+            padding: 10px;
+        }
+        .dropdown ul li a{
+            color: rgb(181, 181, 181);
+        }
+        .dropdown ul li a:hover{
+            color: black;
+        }
+        .aboutus-bg{
+            height:440px ;
+            width: 100%;
+            text-align: center; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            flex-direction: column;
+        }
+         h1{
+            font-family: gloock;
+            font-size: 40px;
+        }
+        .aboutus{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            height: 600px;
+            width : 1000px;
+        }
+        
+        .aboutus img{
+             width:450px ;
+            height: 550px;
+            padding-left: 50px;
+        }
+        .heading1{
+            color: rgb(167, 59, 59);
+            font-family:gloock;
+            font-weight: bold;
+            letter-spacing:6px;
+        }
+        
+        .aboutus div a i{
+            color: rgb(167, 59, 59);
+            padding: 9px;
+            font-size: 22px;            
+        }
+        .line{
+            background-color: rgb(198, 133, 133);
+            height:1px;
+            width: 100%;    
+        }
+        .heading2{
+            color: rgb(167, 59, 59);
+            font-family:gloock;
+            font-weight: bold;
+            letter-spacing:6px;
+        }
+        
+         .aboutus1{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            height: 400px;
+            width : 1000px;
+        }
+        .mission{
+         width: 500px;
+         padding:50px;
+        }
+        .list{
+            padding: 18px;
+            color:  rgb(167, 59, 59);
+            font-size: 20px;
+            font-family:gloock;
+            font-weight:600;
+
+
+        }
+        .text{
+            font-size: 20px;
+            font-family:Radley;
+            color: rgb(31, 1, 1);
+            opacity: 0.9;
+        }
+        footer{
+            background-color: rgb(33, 33, 33);
+        }
+       
+        a i{
+            color: rgb(181, 181, 181);
+            padding: 4px;
+        }
+        h5{
+            font-family:gloock;
+            font-size: 16px;   
+        }
+        p{
+            font-family: g;
+            font-size: 15px;
+            color:rgb(181, 181, 181);
+        }
+        .widget li{
+            float: left;
+            width: 30%;
+        }
+        .widget li a img{
+            margin-bottom: -10px;
+            width: 100%;
+            height: 80px;
+            padding: 2px;
+            margin-top:10px;
+        }
+        
+        
+        
+        
+        
+        
+        
+        @media screen and (min-width:1200px){
+            .aboutus{
+                width:1200px;
+                height: 650px;     
+            }
+            .aboutus img{
+                width: 420px;
+            }
+             .aboutus1{
+                width:1200px;
+            }
+        }
+    </style>
+    </head>
+    <body>
+            <div class="abt_us">
+                 <div class="navbar">
+        <img src="floral.png" alt="" height="110px">
+        <ul>
+    <li><a href="#">HOME</a>
+        <div class="dropdown">
+        <ul>
+          <li><a href="index.html">Marigold</a></li>
+          <li><a href="rosebud.qodeinteractive.html">Mangolia</a></li> 
+        </ul>
+        </div>
+    </li>
+    <li><a href="#">PAGES</a>
+     <div class="dropdown">
+        <ul>
+          <li><a href="About_us.html">About Us</a></li>
+          <li><a href="our-team.html">Our Team</a></li>
+          <li><a href="card1.html">Bookings</a></li>
+          <li><a href="masonry.html">Gallery</a></li>
+
+        </ul>
+        </div>           
+    </li>
+    <li><a href="cards2.html">SHOP</a></li>
+    <li><a href="reviews.html">REVIEWS</a></li>
+    <li><a href="contact%20us.html">CONTACT US</a></li>
+    <li><a href="login.html">LOGIN</a></li>
+    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+
+            
+    </ul>
+        </div>
+         <div class="aboutus-bg">
+             <h1>ABOUT US</h1>
+        </div>
+        </div>
+         <div class="aboutus  row">
+            <div>
+            <img src="about2.jpg" alt="">
+            </div>
+         <div>
+             <h3 class="heading1">FLORAL DECORS</h3>
+     <p class="text">Welcome to  Floral decors, your one-stop shop for beautiful flower decoration services. Our team of experienced florists has been providing stunning arrangements for weddings, corporate events, birthdays, and other special occasions for many years.At floral decors, we understand that flowers can bring a special touch to any event or space. That's why we are committed to providing the highest quality of flowers and arrangements to suit your specific needs. Our team works closely with you to ensure that we understand your vision and deliver results that exceed your expectations.Today, Floral decors has become a go-to destination for anyone looking for exceptional flower decoration services. The business has grown into a thriving enterprise that continues to exceed expectations with every project.
+      </p>
+      <a href=""><i class="fab fa-facebook-f"></i></a>
+      <a href=""><i class="fab fa-twitter"></i></a>
+      <a href=""><i class="fab fa-instagram"></i></a>
+      <a href=""><i class="fab fa-linkedin"></i></a>    
+        </div>
+        </div>
+        <div class="line"></div>
+        
+        <div class="aboutus1  row">
+            <div class="mission">
+        <h2 class="heading2">OUR MISSION</h2>
+        <p class="text">At Floral decors, our mission is to bring the beauty of nature into people's lives through stunning flower decoration. We believe that flowers have the power to transform any space into a work of art, and we are committed to making that a reality for our clients.</p>
+                </div>
+
+            <div>
+            <h2 class="heading2">OUR VALUE</h2>
+                <p class="text">We are committed to delivering exceptional flower decoration services that exceed our clients' expectations, and we do that by adhering to the following core values:</p>
+                <div class="row">
+                    <div class="list">
+                <li>Creativity</li>
+                <li>Sustainability</li>
+                    </div>
+                    <div class="list" >
+                <li>Customer service</li>
+                <li>Integrity</li>
+                    </div>
+                    <div class="list">
+                <li>Quality</li>
+                <li>Personalization</li>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<!--footer-->
+  <footer class="bg-body-tertiary text-center text-lg-start text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row my-4">
+        <!--Grid column-->
+        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+
+          <div class="rounded-circle shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto">
+            <img src="floral.png" height="140" alt=""
+                 loading="lazy" />
+          </div>
+
+          <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod .</p>
+
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      
+    </div>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+       <div class="col-md-2 col-lg-3 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h5 class="text-uppercase fw-bold mb-4">
+            WORKING HOURS
+          </h5>
+          <p>Monday : 10AM-9PM</p>
+           
+          <p>Tuesday : 10AM-9PM<p>
+        
+           <p>Wednesday : 10AM-9PM</p>
+           
+          <p>Thursday : 10AM-9PM</p>
+           
+           <p>Friday : 10AM-9PM</p>
+          
+           <p>Saturday : 10AM-5PM</p>
+           
+          <p>Sunday : closed</p>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h5 class="text-uppercase fw-bold mb-4">Contact</h5>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+         <div class="col-md-4 col-sm-4">
+          <div class="single-footer">
+              <h5>FOLLOW  OUR INSTAGRAM</h5>
+              <ul class="link-area widget list-inline">
+              <li>
+                  <a href="#"><img src="pic1.png" alt=""></a> 
+                  </li>
+                  <li>
+                  <a href="#"><img src="pic2.png" alt=""></a> 
+                  </li>
+                  <li>
+                  <a href="#"><img src="pic3.png" alt=""></a> 
+                  </li>
+                  <li>
+                  <a href="#"><img src="pic4.png" alt=""></a> 
+                  </li>
+                  <li>
+                  <a href="#"><img src="pic5.png" alt=""></a> 
+                  </li>
+                  <li>
+                  <a href="#"><img src="pic6.png" alt=""></a> 
+                  </li>                  
+              </ul>
+            </div>
+          </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">Floraldecors.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+                
+    </body>
+</html>

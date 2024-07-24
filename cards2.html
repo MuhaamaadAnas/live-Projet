@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- divinectorweb.com -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CARD2  </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"
+    />
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  </head>
+  <style>
+    body {
+      background: #ffffff;
+    }
+    .products {
+      padding: 5% 0 0;
+    }
+    .card {
+      border: none;
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+      height: 600px;
+      margin: 20px 5px;
+    }
+    .card-body {
+      color: #fff;
+      background: #fffefe;
+    }
+    .card-title {
+      font-size: 30px;
+      font-weight: 700;
+      transition: all 0.5s ease-in-out;
+      color: #111111;
+    }
+    .card-text{
+        color: black;
+    }
+    .btn-group .btn {
+      background: #000000;
+      color: #fff;
+      font-size: 18px;
+      margin-right: 5px;
+      padding: 10px 20px;
+      font-weight: 700;
+      transition: all 0.6s ease-in;
+    }
+    .price {
+      font-size: 25px;
+      font-weight: 900;
+      transition: 0.6s;
+    }
+    .card:hover .price {
+      animation: pulse 0.5s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(0.95);
+      }
+      0% {
+        transform: scale(1);
+      }
+    }
+    .card:hover .card-title {
+      letter-spacing: 5px;
+      font-weight: 300;
+    }
+      .btn a{
+          color: white;
+          text-decoration: none;
+      }
+      .btn a:hover{
+          color: black;
+      }
+    .btn:hover {
+      background: #fff;
+      color: #262626;
+    }
+    @media (max-width: 991px) {
+      .card {
+        margin-bottom: 30px;
+      }
+    }
+    @media (max-width: 767px) {
+      .btn-group .btn {
+        font-size: 9px;
+      }
+    }
+    img {
+      height: 70px ; width: 50px;
+    }
+    .btn-group{
+      text-align: center;
+      border-radius: 50%;
+      /* height: 0px; */
+      width: 100%;
+    }
+    /*-----------navbar ---------- */
+    #logo {
+    /* height: 3rem !important; */
+    transition: all 0.2s ease-in-out;
+    height: 100px;
+    width: 100px;
+
+}
+header{
+    background-image: url(bgb1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    height: 500px;
+    width: 100%;
+}
+header, header > * {
+ z-index: 3;
+}
+#logo:hover {
+    scale: 110%;
+    filter: drop-shadow(0px 0px 10px gray);
+}
+
+
+.logo-span-1 {
+    margin-top: 0.2rem;
+    display: block;
+    line-height: 1.3rem;
+    color: rgb(69, 69, 69);
+    cursor: default;
+    padding: 0.8rem 0.7rem 0.8rem 0;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.logo-span-2 {
+    font-size: 1.4em;
+    font-weight: 500;
+    width: 3rem;
+}
+
+#side-tabs {
+    border-right: 1px solid rgb(221, 221, 221) !important;
+    top: 0;
+}
+
+#HeroSection {
+    overflow-y:hidden;
+    box-shadow: 2px 0px 20px rgba(135, 135, 135, 0.64);
+}
+        .navbar{
+            height: 80px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar ul{
+            list-style: none;
+            display: flex;
+        }
+        .navbar ul li{
+            padding: 10px 30px;
+            position: relative;
+        }
+        .navbar ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            
+            
+            transition: all 0.3s;
+        }
+        .navbar ul li a i{
+            color: white;
+            font-size: 20px;
+            padding: 10px 5px;
+        }
+         .dropdown{
+            display:none;
+        }
+        .navbar ul li:hover .dropdown{
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            background-color: white;
+        }
+        .dropdown ul{
+            display: block;
+            margin: 10px;
+        } 
+        .dropdown ul li {
+            width: 150px;
+            padding: 10px;
+        }
+        .dropdown ul li a{
+            color: rgb(181, 181, 181);
+        }
+        .dropdown ul li a:hover{
+            color: black;
+        }
+/*----------- FOOTER --------------  */
+footer{
+            background-color: rgb(33, 33, 33);
+            margin-top: 40px;
+        }
+       
+        a i{
+            color: rgb(181, 181, 181);
+            padding: 4px;
+        }
+        h5{
+            font-family:gloock;
+            font-size: 16px;   
+        }
+        .ft{
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            color:rgb(181, 181, 181);
+        }
+        .widget li{
+            float: left;
+            width: 30%;
+        }
+        .widget li a img{
+            margin-bottom: -10px;
+            width: 100%;
+            height: 80px;
+            padding: 2px;
+            margin-top:10px;
+        }
+  </style>
+  <body>
+    <header>
+ <div class="navbar">
+     
+          <div class="logo-container d-flex align-items-center ms-6">
+            <img id="logo"  src="floral.png" alt="" >
+            <!-- <span class="logo-span-1"> <br><span class="logo-span-2"</span></span> -->
+          </div>
+        <ul>
+    <li><a href="#">HOME</a>
+        <div class="dropdown">
+        <ul>
+          <li><a href="index.html">Marigold</a></li>
+          <li><a href="rosebud.qodeinteractive.html">Mangolia</a></li> 
+        </ul>
+        </div>
+    </li>
+    <li><a href="#">PAGES</a>
+     <div class="dropdown">
+        <ul>
+          <li><a href="About_us.html">About Us</a></li>
+          <li><a href="our-team.html">Our Team</a></li>
+          <li><a href="card1.html">Bookings</a></li>
+          <li><a href="masonry.html">Gallery</a></li>
+        </ul>
+        </div>           
+    </li>
+    <li><a href="cards2.html">SHOP</a></li>
+    <li><a href="reviews.html">REVIEWS</a></li>
+    <li><a href="contact%20us.html">CONTACT US</a></li>
+    <li><a href="login.html">LOGIN</a></li>
+    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+
+            
+    </ul>
+        </div>
+        <h1 style="text-align: center; padding: 100px 100px; color: #ffffff; font-size: 90px; font-family:'Times New Roman', Times, serif; margin-top: 30px"><i>Flower Bouquets</i></h1>
+    </header>
+    <div class="products ">
+      <div class="container">
+        <div class="row card-deck">
+          <div class="col-lg-4">
+            <div class="card">
+                <img
+                  src="bq1.jpg"
+                  class="card-img-top"
+                  alt="Product 2"
+                  style="height: 350px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title"> Rose Bouquet</h5>
+                  <p class="card-text">
+                    A bouquet is not just a collection of flowers; it's a symphony of colors, scents, and emotions. Each bloom chosen with care, arranged with artistry, it becomes a language of its own.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                     
+                      <button type="button" class="btn btn-sm" style="border-radius: 5%;" ><a href="Rose Bouquet.docx" download >Add to Cart</a>
+                        
+                      </button>
+                    </div>
+                    <span class="price">$159.99</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+
+          <div class="col-lg-4">
+            <div class="card">
+              <img
+                src="bq2.jpg"
+                class="card-img-top"
+                alt="Product 2"
+                style="height: 350px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Peony Bouquet</h5>
+                <p class="card-text">
+                  A bouquet is not just a collection of flowers; it's a symphony of colors, scents, and emotions. Each bloom chosen with care, arranged with artistry, it becomes a language of its own.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    
+                    <button type="button" class="btn btn-sm" style="border-radius: 5%;" ><a href="Peony%20Bouquet.docx" download >Add to Cart</a>
+                    </button>
+                  </div>
+                  <span class="price">$159.99</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4">
+            <div class="card">
+              <img
+                src="bq4.jpg"
+                class="card-img-top"
+                alt="Product 2"
+                style="height: 350px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Orchid Bouquet</h5>
+                <p class="card-text">
+                  A bouquet is not just a collection of flowers; it's a symphony of colors, scents, and emotions. Each bloom chosen with care, arranged with artistry, it becomes a language of its own.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                  
+                    <button type="button" class="btn btn-sm" style="border-radius: 5%;" ><a href="Orchid%20Bouquet.docx" download >Add to Cart</a>
+                    </button>
+                  </div>
+                  <span class="price">$159.99</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4">
+            <div class="card">
+              <img
+                src="n-bq1.jpg"
+                class="card-img-top"
+                alt="Product 2"
+                style="height: 350px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Dahlia Bouquet</h5>
+                <p class="card-text">
+                  A bouquet is not just a collection of flowers; it's a symphony of colors, scents, and emotions. Each bloom chosen with care, arranged with artistry, it becomes a language of its own.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    
+                    <button type="button" class="btn btn-sm" style="border-radius: 5%;" ><a href="Dahlia%20Bouquet.docx" download >Add to Cart</a>
+                    </button>
+                  </div>
+                  <span class="price">$159.99</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4">
+            <div class="card">
+              <img
+                src="bq6.jpg"
+                class="card-img-top"
+                alt="Product 2"
+                style="height: 350px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Azalea Bouquet</h5>
+                <p class="card-text">
+                  A bouquet is not just a collection of flowers; it's a symphony of colors, scents, and emotions. Each bloom chosen with care, arranged with artistry, it becomes a language of its own.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                   
+                    <button type="button" class="btn btn-sm" style="border-radius: 5%;" ><a href="Azalea%20Bouquet.docx" download >Add to Cart</a>
+                    </button>
+                  </div>
+                  <span class="price">$159.99</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4">
+            <div class="card">
+              <img
+                src="bq7.jpg"
+                class="card-img-top"
+                alt="Product 2"
+                style="height: 350px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Kale Bouquet</h5>
+                <p class="card-text">
+                  A bouquet is not just a collection of flowers; it's a symphony of colors, scents, and emotions. Each bloom chosen with care, arranged with artistry, it becomes a language of its own.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                   
+                    <button type="button" class="btn btn-sm" style="border-radius: 5%;" >
+                      Add to Cart
+                    </button>
+                  </div>
+                  <span class="price">$159.99</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4">
+            <div class="card">
+              <img
+                src="n-bq2.jpg"
+                class="card-img-top"
+                alt="Product 2"
+                style="height: 350px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Petunia Bouquet</h5>
+                <p class="card-text">
+                  A bouquet is not just a collection of flowers; it's a symphony of colors, scents, and emotions. Each bloom chosen with care, arranged with artistry, it becomes a language of its own.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    
+                    <button type="button" class="btn btn-sm" style="border-radius: 5%;" >
+                      Add to Cart
+                    </button>
+                  </div>
+                  <span class="price">$159.99</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4">
+            <div class="card">
+              <img
+                src="bq2.jpg"
+                class="card-img-top"
+                alt="Product 2"
+                style="height: 350px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Aster Bouquet</h5>
+                <p class="card-text">
+                  A bouquet is not just a collection of flowers; it's a symphony of colors, scents, and emotions. Each bloom chosen with care, arranged with artistry, it becomes a language of its own.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                  
+                    <button type="button" class="btn btn-sm" style="border-radius: 5%;" >
+                      Add to Cart
+                    </button>
+                  </div>
+                  <span class="price">$159.99</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4">
+            <div class="card">
+              <img
+                src="bq3.jpg"
+                class="card-img-top"
+                alt="Product 3"
+                style="height: 350px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pansy Bouquet</h5>
+                <p class="card-text">
+                  A bouquet is not just a collection of flowers; it's a symphony of colors, scents, and emotions. Each bloom chosen with care, arranged with artistry, it becomes a language of its own.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                   
+                    <button type="button" class="btn btn-sm" style="border-radius: 5%;" >
+                      Add to Cart
+                    </button>
+                  </div>
+                  <span class="price">$159.99</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!---------------------- FOOTER -------------  -->
+<footer class="bg-body-tertiary text-center text-lg-start text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row my-4">
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+
+        <div class="rounded-circle shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto">
+          <img src="floral.png" height="140" alt=""
+               loading="lazy" />
+        </div>
+
+        <p class= " ft text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod .</p>
+
+  <div>
+    <a href="" class="me-4 text-reset">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="" class="me-4 text-reset">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="" class="me-4 text-reset">
+      <i class="fab fa-google"></i>
+    </a>
+    <a href="" class="me-4 text-reset">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="" class="me-4 text-reset">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    
+  </div>
+
+      </div>
+      <!--Grid column-->
+     <div class="col-md-2 col-lg-3 col-xl-2 mx-auto mb-4">
+        <!-- Links -->
+        <h5 class="text-uppercase fw-bold mb-4">
+          WORKING HOURS
+        </h5>
+        <p class="ft">Monday : 10AM-9PM</p>
+         
+        <p class="ft">Tuesday : 10AM-9PM<p>
+      
+         <p class="ft">Wednesday : 10AM-9PM</p>
+         
+        <p class="ft">Thursday : 10AM-9PM</p>
+         
+         <p class="ft">Friday : 10AM-9PM</p>
+        
+         <p class="ft">Saturday : 10AM-5PM</p>
+         
+        <p>Sunday : closed</p>
+      </div>
+      <!--Grid column-->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <!-- Links -->
+        <h5 class="text-uppercase fw-bold mb-4">Contact</h5>
+        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+        <p>
+          <i class="fas fa-envelope me-3"></i>
+          info@example.com
+        </p>
+        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+       <div class="col-md-4 col-sm-4">
+        <div class="single-footer">
+            <h5>FOLLOW  OUR INSTAGRAM</h5>
+            <ul class="link-area widget list-inline">
+            <li>
+                <a href="#"><img src="pic1.png" alt=""></a> 
+                </li>
+                <li>
+                <a href="#"><img src="pic2.png" alt=""></a> 
+                </li>
+                <li>
+                <a href="#"><img src="pic3.png" alt=""></a> 
+                </li>
+                <li>
+                <a href="#"><img src="pic4.png" alt=""></a> 
+                </li>
+                <li>
+                <a href="#"><img src="pic5.png" alt=""></a> 
+                </li>
+                <li>
+                <a href="#"><img src="pic6.png" alt=""></a> 
+                </li>                  
+            </ul>
+          </div>
+        </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      2020 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">Floraldecors.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<!-- End of .container -->
+  </body>
+</html>
